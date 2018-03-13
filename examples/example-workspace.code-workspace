@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+    	"markdown.styles": [
+			".vscode/exia-md.theme.css"
+		],
+		"markdown-pdf.styles": [
+			".vscode/exia-md.theme.css"
+		],
+		"markdown-pdf.footer.contents": "<div style=\"text-align: center; margin-top: 0.5cm; background: rgb(192, 0, 0); color: white;\">{{page}}/{{pages}}</div>",
+		"spellright.language": "French",
+	}
+}
