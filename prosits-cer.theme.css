@@ -30,3 +30,8 @@ h3 {
     font-family: "Open Sans";
     font-weight: bold;
 }
+
+img {
+    display: block;
+    margin: auto;
+}
