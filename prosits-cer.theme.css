@@ -35,3 +35,18 @@ img {
     display: block;
     margin: auto;
 }
+
+h1 + p::first-letter{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+h2 + p::first-letter, h3 + p::first-letter {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h4 + p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
