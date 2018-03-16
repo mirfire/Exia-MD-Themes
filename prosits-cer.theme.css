@@ -54,3 +54,9 @@ h1 + p::first-letter{
 table {
     border: 1px solid #565656;
 }
+
+blockquote {
+    border-left: 8px solid #5f91f4;
+    background: #dbe7ff;
+    padding-left: 1em;
+}
