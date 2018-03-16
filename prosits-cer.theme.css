@@ -1,16 +1,24 @@
 body {
     font-family: "Open Sans", "Calibri", "Arial", sans-serif;
+    background: white;
+}
+
+p, ul, ol, table {
+    color: black;
+}
+
+p, ul, ol {
     text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans Light", "Calibri Light", "Arial", sans-serif;;
+    font-family: "Open Sans Light", "Calibri Light", "Arial", sans-serif;
+    color: white;
 }
 
 h1 {
     display: block;
     background: rgb(192, 0, 0);
-    color: white;
     text-align: center;
     padding: .3em;
 }
@@ -29,24 +37,16 @@ h2 {
 h3 {
     font-family: "Open Sans";
     font-weight: bold;
+    color: black;
 }
 
 img {
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 h1 + p::first-letter{
     font-size: 2.5em;
     font-weight: bolder;
-}
-
-h2 + p::first-letter, h3 + p::first-letter {
-    font-size: 2em;
-    font-weight: bolder;
-}
-
-h4 + p::first-letter {
-    font-size: 1.5em;
-    font-weight: bold;
 }
