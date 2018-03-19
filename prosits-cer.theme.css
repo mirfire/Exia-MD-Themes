@@ -3,15 +3,25 @@ body {
     background: white;
 }
 
-p, ul, ol, table {
+p,
+ul,
+ol,
+table {
     color: black;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
     text-align: justify;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Open Sans Light", "Calibri Light", "Arial", sans-serif;
     color: white;
 }
@@ -34,7 +44,10 @@ h2 {
     padding: .2em .5em;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
     font-family: "Open Sans";
     font-weight: bold;
     color: black;
@@ -46,7 +59,7 @@ img {
     max-width: 100%;
 }
 
-h1 + p::first-letter{
+h1+p::first-letter {
     font-size: 2.5em;
     font-weight: bolder;
 }
