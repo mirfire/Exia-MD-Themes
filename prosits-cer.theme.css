@@ -51,6 +51,8 @@ h6 {
     font-family: "Open Sans";
     font-weight: bold;
     color: black;
+    display: block;
+    border-bottom: 2px solid rgb(192, 0, 0) !important;
 }
 
 img {
