@@ -76,3 +76,14 @@ blockquote {
     padding-left: 1em;
     margin: 0 0;
 }
+
+pre,
+code {
+    background: #232323;
+    color: #E8E8E8;
+}
+
+pre {
+    padding: 1em;
+    max-width: 100%;
+}
