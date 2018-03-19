@@ -22,9 +22,22 @@ Nulla tempor blandit tellus ut semper. Donec eleifend tortor ut arcu lobortis ru
 
 `This is inline code or command.`
 
-### Lists
+### Links
 
-#### Unordered List
+[Link with text](https://github.com/mirfire/Exia-MD-Themes).
+
+[Link with text and title](https://github.com/mirfire/Exia-MD-Themes "title text!").
+
+Simple link https://github.com/mirfire/Exia-MD-Themes
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+## Lists
+
+### Unordered List
 
 * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   * Ut sollicitudin velit vel elit fringilla ultrices.
@@ -32,7 +45,11 @@ Nulla tempor blandit tellus ut semper. Donec eleifend tortor ut arcu lobortis ru
   * Donec eu nisl lacinia, dictum nibh eget, sagittis dolor.
   * Maecenas porta nisl at arcu rutrum, non facilisis turpis pellentesque.
 
-#### Ordered List
+* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  * Ut sollicitudin velit vel elit fringilla ultrices.
+  * Maecenas porta nisl at arcu rutrum, non facilisis turpis pellentesque.
+
+### Ordered List
 
 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 2. Ut sollicitudin velit vel elit fringilla ultrices.
@@ -40,7 +57,7 @@ Nulla tempor blandit tellus ut semper. Donec eleifend tortor ut arcu lobortis ru
 4. Donec eu nisl lacinia, dictum nibh eget, sagittis dolor.
 5. Maecenas porta nisl at arcu rutrum, non facilisis turpis pellentesque.
 
-#### Headers
+### Headers
 
 # Header 1
 
@@ -56,20 +73,85 @@ Nulla tempor blandit tellus ut semper. Donec eleifend tortor ut arcu lobortis ru
 
 ## Blocks
 
+#### JavaScript
+
+```javascript
+function myFunction(name,job) {
+    document.getElementById("demo").innerHTML =
+    "Welcome " + name + ", the " + job + ".";
+}
+```
+
+#### C#
+
+```csharp
+static void Main(string[] args) {
+ int i;
+
+ Console.Write("Enter a Number : ");
+ i = int.Parse(Console.ReadLine());
+ if (i % 2 == 0) {
+  Console.Write("Entered Number is an Even Number");
+  Console.Read();
+ } else {
+  Console.Write("Entered Number is an Odd Number");
+  Console.Read();
+ }
+}
+```
+
+#### Python
+
+```python
+x = int(input("Please enter an integer: "))
+if x < 0:
+  x = 0
+  print('Negative changed to zero')
+elif x == 0:
+  print('Zero')
+elif x == 1:
+  print('Single')
+else:
+  print('More')
+```
+
+#### No language
+
+##### Tab Block
+
     This is unformatted code.
     It doesn't look very nice.
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
+##### Code Block
 
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
+```none
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
+
+## Tables
+
+### Left aligned columns
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+### Center aligned columns
+
+| Option | Description                                                               |
+| :----: | :-----------------------------------------------------------------------: |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+### Right aligned columns
+
+| Option | Description                                                               |
+| -----: | ------------------------------------------------------------------------: |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
