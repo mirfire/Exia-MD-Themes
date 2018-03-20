@@ -70,6 +70,14 @@ table {
     border: 1px solid #565656;
 }
 
+th {
+    background: #dddddd;
+}
+
+tr.even {
+    background: #eeeeee;
+}
+
 blockquote {
     border-left: 5px solid #5f91f4;
     background: #dbe7ff;
