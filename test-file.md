@@ -52,7 +52,7 @@ Nulla tempor blandit tellus ut semper. Donec eleifend tortor ut arcu lobortis ru
 
 [Link with text and title](https://github.com/mirfire/Exia-MD-Themes "title text!").
 
-Simple link https://github.com/mirfire/Exia-MD-Themes
+Simple link <https://github.com/mirfire/Exia-MD-Themes>
 
 ## Images
 
