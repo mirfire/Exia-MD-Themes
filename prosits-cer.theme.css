@@ -85,6 +85,11 @@ blockquote {
     margin: 0 0;
 }
 
+p code {
+    padding: .6em .5em .4em .5em;
+    line-height: 1em;
+}
+
 pre,
 code {
     background: #232323;
