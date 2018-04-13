@@ -1,0 +1,63 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build:html",
+            "type": "shell",
+            "group": "build",
+            "command": "pandoc",
+            "args": [
+                "\"${file}\"",
+                "--from=markdown+smart+auto_identifiers+footnotes",
+                "--resource-path=\"${fileDirname}\"",
+                "--standalone",
+                "--to=html5",
+                "--css=\"${workspaceFolder}/.vscode/Exia-MD-Themes/prosits-cer.theme.css\"",
+                "--highlight-style=breezedark",
+                "--output=${fileDirname}/${fileBasenameNoExtension}.html"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build:pdf",
+            "type": "shell",
+            "group": "build",
+            "command": "cd \"${fileDirname}\"; wkhtmltopdf \"${fileDirname}/${fileBasenameNoExtension}.html\" \"${fileDirname}/${fileBasenameNoExtension}.pdf\"",
+            "args": [],
+            "dependsOn": [
+                "build:html"
+            ]
+        },
+        {
+            "label": "build:docx",
+            "type": "shell",
+            "group": "build",
+            "command": "pandoc",
+            "args": [
+                "\"${file}\"",
+                "--from=markdown",
+                "--resource-path=\"${fileDirname}\"",
+                "--standalone",
+                "--to=docx",
+                "--highlight-style=breezedark",
+                "--output=${fileDirname}/${fileBasenameNoExtension}.docx"
+            ]
+        },
+        {
+            "label": "build:allclean",
+            "type": "shell",
+            "group": "build",
+            "command": "rm",
+            "args": [
+                "\"${fileDirname}/${fileBasenameNoExtension}.html\""
+            ],
+            "dependsOn": [
+                "build:pdf",
+                "build:docx"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
