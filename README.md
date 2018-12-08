@@ -4,7 +4,7 @@ CSS Themes to be used with Visual Studio Code. To use it, just add the following
 
 ```json
 "markdown.styles": [
-    "https://cdn.rawgit.com/mirfire/Exia-MD-Themes/master/prosits-cer.theme.css"
+    "https://cdn.jsdelivr.net/gh/mirfire/Exia-MD-Themes/prosits-cer.theme.css"
 ]
 ```
 
